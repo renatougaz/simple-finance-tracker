@@ -1,4 +1,4 @@
-package com.example.simplefinancetracker
+package com.renatougaz.simplefinancetracker
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -7,7 +7,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.example.simplefinancetracker.databinding.ActivityMainBinding
+import com.renatougaz.simplefinancetracker.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

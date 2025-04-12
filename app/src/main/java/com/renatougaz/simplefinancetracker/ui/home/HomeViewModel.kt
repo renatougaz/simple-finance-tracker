@@ -1,13 +1,13 @@
-package com.example.simplefinancetracker.ui.notifications
+package com.renatougaz.simplefinancetracker.ui.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class NotificationsViewModel : ViewModel() {
+class HomeViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is notifications Fragment"
+        value = "This is home Fragmen"
     }
     val text: LiveData<String> = _text
 }

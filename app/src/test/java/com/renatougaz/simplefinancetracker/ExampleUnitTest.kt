@@ -1,4 +1,4 @@
-package com.example.simplefinancetracker
+package com.renatougaz.simplefinancetracker
 
 import org.junit.Test
 

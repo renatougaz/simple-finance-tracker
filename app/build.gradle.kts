@@ -1,14 +1,18 @@
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+    id("org.jetbrains.kotlin.kapt")
 }
 
 android {
-    namespace = "com.example.simplefinancetracker"
+    namespace = "com.renatougaz.simplefinancetracker"
     compileSdk = 35
 
+    buildFeatures {
+        dataBinding = true
+    }
     defaultConfig {
-        applicationId = "com.example.simplefinancetracker"
+        applicationId = "com.renatougaz.simplefinancetracker"
         minSdk = 29
         targetSdk = 35
         versionCode = 1
