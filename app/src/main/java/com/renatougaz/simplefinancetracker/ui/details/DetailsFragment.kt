@@ -4,10 +4,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-//import com.renatougaz.simplefinancetracker.databinding.FragmentDashboardBinding
 import com.renatougaz.simplefinancetracker.databinding.FragmentDetailsBinding
 
 class DetailsFragment : Fragment() {
@@ -24,21 +22,16 @@ class DetailsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-
-
         val detailsViewModel =
-            ViewModelProvider(this).get(DetailsViewModel::class.java)
+            ViewModelProvider(this)[DetailsViewModel::class.java]
 
         _binding = FragmentDetailsBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val currentDebtEditText: EditText = binding.floatInputEditText
-
-//        var currentDebt : Float = 0.0f
-//
-//        detailsViewModel.currentDebt.observe(viewLifecycleOwner) {
-//            currentDebt = currentDebtEditText.text.toString().toFloat()
-//        }
+        // Connect the ViewModel to the layout's viewModel variable
+        binding.viewModel = detailsViewModel
+        // Enable LiveData observation in the layout
+        binding.lifecycleOwner = viewLifecycleOwner
 
         return root
     }
