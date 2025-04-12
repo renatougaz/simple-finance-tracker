@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Simple finance tracker</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Details</string>
+    <string name="title_notifications">Debt</string>
+    <string name="how_much_money_you_have">How much money you have</string>
+    <string name="enter_how_much_money_you_owe">Enter how much money you owe</string>
+</resources>
